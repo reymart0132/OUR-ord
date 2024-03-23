@@ -93,7 +93,7 @@ class ainfo extends config{
                         <td class='pt-5 px-5' width='40%'>
                             Transaction Number: <h4><i class='fa-solid fa-key icon-info'></i> <b class='text-info'>$transID</b></h4>
                             Request Date: <h5><i class='fa-solid fa-calendar-days icon-info'></i> <b class='text-info'>$dateapp</b></h5>
-                            Assigned to: <h5><i class='fa-solid fa-keyboard icon-info'></i> <b class='text-info'>$assign</b></h5>
+                            Assigned to: <h5><i class='fa-solid fa-user-plus icon-info'></i> <b class='text-info'>$assign</b></h5>
                         </td>    
                     </tr>
                     <tr>
@@ -118,11 +118,11 @@ class ainfo extends config{
                             Special Instructions:<h5><b class='text-danger'>$inst</b></h5>
                         </td>
                         <td class='py-4 px-5' width='40%'>
-                            Request Purpose: <h5><b class='text-info'>$reason</b></h5>
-                            Date Confirmed: <h5><b class='text-info'>$confirmed</b></h5>
-                            Date Paid: <h5><b class='text-info'>$paid</b></h5>
-                            Date Signed: <h5><b class='text-info'>$signed</b></h5>
-                            Date Released: <h5><b class='text-info'>$released</b></h5>
+                            Request Purpose: <h5><i class='fa-solid fa-clipboard-question icon-info'></i> <b class='text-info'>$reason</b></h5>
+                            Date Confirmed: <h5><i class='fa-solid fa-calendar-days icon-info'></i> <b class='text-info'>$confirmed</b></h5>
+                            Date Paid: <h5><i class='fa-solid fa-calendar-days icon-info'></i> <b class='text-info'>$paid</b></h5>
+                            Date Signed: <h5><i class='fa-solid fa-calendar-days icon-info'></i> <b class='text-info'>$signed</b></h5>
+                            Date Released: <h5><i class='fa-solid fa-calendar-days icon-info'></i> <b class='text-info'>$released</b></h5>
                         </td>
                     </tr>
                     <tr><td class='text-center'><a href='actions.php?landing=adash-onlineapp&state=5&transactionID=$transID&type=reg' class='btn btn-sm  btn-success m-1' data-toggle='tooltip' data-placement='top' title='Awaiting Payment'><i class='fa-solid fa-check'></i> Confirm Transaction</a><a href='https://mail.google.com/mail/?view=cm&fs=1&to=$email&su= $fullname - CEU Document Request -  $transID&body=Goodmorning!%0D%0A%0D%0AWe have received and acknowledged your request!%0D%0A%0D%0ATotal Break down of your transaction is listed below:%0D%0A %0D%0A $summary %0D%0ATotal Price: PHP$price.00 %0D%0A%0D%0APayments can be made through this link.%0D%0A https://ptipages.paynamics.net/ceu/default.aspx %0D%0A%0D%0A *Please send us the proof of payment to this email address for us to proceed with your documents. %0D%0A %0D%0A Release date is 15 working days after submission of proof of payment for TOR %0D%0A and 5 working days after submission of proof of payment for certificates ( please send it to this email thread for faster transaction) %0D%0A %0D%0A Thank you and Stay safe!' target='_blank' class='btn btn-sm  btn-google m-1' data-toggle='tooltip' data-placement='top' title='Open Gmail'><i class='fa-brands fa-google'></i>mail Requestor</a>";

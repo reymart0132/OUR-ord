@@ -17,6 +17,8 @@
     <script src="https://kit.fontawesome.com/03ca298d2d.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
     <title>Dashboard</title>
     <link rel="icon" type="image/x-icon" href="resource/img/ceu.png" />
@@ -128,19 +130,19 @@
           </div>
 
           <div class="container-fluid p-5">
-            <div class="row">
-              <div class="col-md p-5 content">
-                  Charts and Summary Here
+            <!-- <div class="row"> -->
+              <!-- <div class="col-md p-5 content container-fluid"> -->
+                  <?php include 'charts.php'; ?>
 
-              </div>
-            </div>
+              <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
      </div>
     </header>
 
-      
+      <?php include 'chart-control.php'; ?>
       <script type="text/javascript">
         var el = document.getElementById("wrapper")
         var toggleButton = document.getElementById("menu-toggle")
